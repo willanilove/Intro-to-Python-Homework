@@ -3,7 +3,7 @@
 pet_type = input("Enter pet type (dog/cat/bird/hamster): ")
 human_age = int(input("Enter your pet's age in human years: "))
 
-if pet_type in ["Dog", "Cat"]:
+if pet_type in ["dog", "cat"]:
     if human_age <= 2:
         pet_age = human_age * 12
     else:
