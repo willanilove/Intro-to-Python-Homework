@@ -1,6 +1,6 @@
 # Create a program that converts human years to pet years for different animals.
 
-pet_type = input("Enter pet type (dog/cat/bird/hamster): ")
+pet_type = input("Enter pet type (dog/cat/bird/hamster): ").lower() 
 human_age = int(input("Enter your pet's age in human years: "))
 
 if pet_type in ["dog", "cat"]:
@@ -8,9 +8,9 @@ if pet_type in ["dog", "cat"]:
         pet_age = human_age * 12
     else:
         pet_age = 24 + (human_age - 2) * 4
-elif pet_type == "Bird":
+elif pet_type == "bird":
     pet_age = human_age * 9
-elif pet_type == "Hamster":
+elif pet_type == "hamster":
     pet_age = human_age * 25
 else:
     pet_age = None
